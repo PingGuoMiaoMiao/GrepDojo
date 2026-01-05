@@ -1,0 +1,8 @@
+[package]
+name = "searcher"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+matcher = {path = "../matcher"}
+anyhow = "1"

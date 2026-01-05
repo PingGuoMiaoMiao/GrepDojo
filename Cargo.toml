@@ -1,0 +1,32 @@
+[package]
+name = "GrepDojo"
+version = "0.1.0"
+edition = "2024"
+
+[[bin]]
+name = "grepdojo"
+path = "src/main.rs"
+
+[dependencies]
+core = { path = "crates/core" }
+
+[workspace]
+resolver = "2"
+members = [
+    "crates/core",
+    "crates/matcher",
+    "crates/searcher",
+    "crates/printer",
+    # "crates/grep",   # 如果这个文件夹里没代码，先注释掉
+    # "crates/ignore", # 同上
+    # "crates/regex",  # 严重建议删掉这个 crate，因为它会和 regex 依赖库名字冲突！
+]
+
+# 在这里统一管理版本
+[workspace.dependencies]
+regex = "1.5"
+clap = { version = "4.0", features = ["derive"] }
+anyhow = "1.0"
+matcher = { path = "crates/matcher" }
+searcher = { path = "crates/searcher" }
+printer = { path = "crates/printer" }

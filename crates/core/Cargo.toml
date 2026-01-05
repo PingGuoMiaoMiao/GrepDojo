@@ -1,0 +1,12 @@
+[package]
+name = "core"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+matcher = { workspace = true }
+searcher = { workspace = true }
+printer = { workspace = true }
+clap = { workspace = true }
+anyhow = { workspace = true }
+walkdir = "2"
