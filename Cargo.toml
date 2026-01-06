@@ -17,8 +17,8 @@ members = [
     "crates/matcher",
     "crates/searcher",
     "crates/printer",
+    "crates/ignore",
     # "crates/grep",   # 如果这个文件夹里没代码，先注释掉
-    # "crates/ignore", # 同上
     # "crates/regex",  # 严重建议删掉这个 crate，因为它会和 regex 依赖库名字冲突！
 ]
 
@@ -30,3 +30,4 @@ anyhow = "1.0"
 matcher = { path = "crates/matcher" }
 searcher = { path = "crates/searcher" }
 printer = { path = "crates/printer" }
+ignore = { path = "crates/ignore" }

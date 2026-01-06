@@ -9,4 +9,6 @@ searcher = { workspace = true }
 printer = { workspace = true }
 clap = { workspace = true }
 anyhow = { workspace = true }
+ignore = {workspace = true}
 walkdir = "2"
+rayon = "1.8"
