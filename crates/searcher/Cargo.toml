@@ -6,3 +6,4 @@ edition = "2024"
 [dependencies]
 matcher = {path = "../matcher"}
 anyhow = "1"
+memmap2 = "0.9.9"

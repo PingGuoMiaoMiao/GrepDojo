@@ -1,6 +1,0 @@
-hello world
-test line
-hello again
-another test
-no match here
-TEST uppercase
